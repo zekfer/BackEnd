@@ -1,0 +1,45 @@
+/* Background colors based on palette */
+.app {
+    background-color: #0E0725;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  /* Navbar styling */
+  .navbar-dark {
+    background-color: #280657;
+  }
+  
+  .profile-icon i {
+    font-size: 1.5rem;
+    color: #5c03bc;
+  }
+  
+  /* Quote Card */
+  .quote-card {
+    background-color: #4b1c97;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .quote {
+    font-size: 1.8rem;
+    color: #4F04A3;
+  }
+  
+  /* Scoreboard */
+  .score-card {
+    background-color: #350571;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-success {
+    background-color: #42048A;
+    border-color: #4F04A3;
+  }
+  
+  .btn-success:hover {
+    background-color: #5C03BC;
+  }
+  
