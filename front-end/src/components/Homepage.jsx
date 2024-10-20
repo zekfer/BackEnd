@@ -89,8 +89,10 @@ function Homepage() {
     "Don't stop until you're proud.",
     "The key to success is to focus on goals, not obstacles.",
     "Success is the sum of small efforts, repeated day in and day out.",
-    "Stay focused, work hard, and success will follow.",
-    "Do something today that your future self will thank you for."
+        "Stay focused, work hard, and success will follow.",
+        "Do something today that your future self will thank you for.",
+        "Remember each step matters like the last step",
+        "Consistency is the key to success"
   ];
 
   useEffect(() => {
