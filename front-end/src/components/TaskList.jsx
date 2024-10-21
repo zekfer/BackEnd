@@ -135,7 +135,7 @@ const TaskList = () => {
     if (editingTaskId) {
       // Update existing task
       setTasks(tasks.map(task => (task.id === editingTaskId ? { ...newTask, id: editingTaskId } : task)));
-      // setEditingTaskId(null);
+      setEditingTaskId(null);
     } else {
       // Add new task
       setTasks([...tasks, { ...newTask, id: Date.now().toString() }]);
