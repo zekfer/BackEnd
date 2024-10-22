@@ -1,42 +1,32 @@
-// // src/App.jsx
-// import React from 'react';
-// import Login from './components/Login';
-// import TaskList from './components/TaskList';
-// import './index.css';
-
-// const App = () => {
-//   return (
-//       <Login />
-//     // <div className="app-container bg-gray-900 text-white min-h-screen p-6">
-//     //   <TaskList />
-//     // </div>
-//   );
-// };
-
-// export default App;
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import TaskList from './components/TaskList';
+import ProfilePage from './components/ProfilePage';
+import Navbar from './components/Navbar'; 
+import Homepage from './components/Homepage';
 import './index.css';
 
 const App = () => {
   return (
-    <Router>
+    <div className="app-container bg-gray-900 text-white min-h-screen p-6">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
         <Route 
-          path="/tasklist" 
+          path="/tasks" 
           element={
             <div className="app-container bg-gray-900 text-white min-h-screen p-6">
               <TaskList />
             </div>
-          } 
+          }
         />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
-    </Router>
+    </div>
   );
 };
 
 export default App;
-

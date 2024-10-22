@@ -16,7 +16,7 @@ const Login = () => {
     const handleLogin = (event) => {
         event.preventDefault(); // Prevent default form submission
         // Here you can add authentication logic if needed
-        navigate('/tasklist'); // Navigate to TaskList component
+        navigate('/home'); // Navigate to TaskList component
     };
 
     const handleSignUp = (event) => {
@@ -35,8 +35,8 @@ const Login = () => {
 
             <div className="form-box login">
                 <h2 className="animation" style={{ '--data': 0 }}>Login</h2>
-                <form onSubmit={handleLogin}>
-                    <div className="input-box animation" style={{ '--data': 1 }}>
+                <form onSubmit={handleLogin} style={{ color: 'black' }}  >
+                <div className="input-box animation" style={{ '--data': 1}}>
                         <input 
                             type="text" 
                             placeholder="" 
@@ -75,7 +75,7 @@ const Login = () => {
 
             <div className="form-box signup">
                 <h2 className="animation">Sign Up</h2>
-                <form onSubmit={handleSignUp}>
+                <form onSubmit={handleSignUp}  style={{ color: 'black' }}>
                     <div className="input-box animation" style={{ '--data': 17 }}>
                         <input 
                             type="text" 
